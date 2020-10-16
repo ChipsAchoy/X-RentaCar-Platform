@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package xrentcar.sharecarsystem.Facades;
 
 import xrentcar.sharecarsystem.Singleton.AccessPoint;
 
 /**
  *
- * @author A
+ * Facade de validación para el propietario del vehículo
+ * Coordina clases de fondo que se necesitan para validar los datos de un vehiculo
  */
 public class ValidationLender implements Validation{
     private int placa;
@@ -21,6 +18,7 @@ public class ValidationLender implements Validation{
 
     @Override
     public boolean validated() {
+        //Obtiene los datos accesando al Singleton
         boolean registroPropiedad = AccessPoint.getInstance().checkProperty(this.placa);
         return registroPropiedad;
     }

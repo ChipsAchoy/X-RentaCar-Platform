@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package xrentcar.sharecarsystem.FactoryMethod;
 
 import xrentcar.sharecarsystem.Facades.ValidationRenter;
 
 /**
  *
- * @author A
+ * Define los atributos y las funciones de los métodos que un usuario asociado a un cliente puede realizar
  */
 public class RenterUser implements User{
     
@@ -43,7 +38,7 @@ public class RenterUser implements User{
 
     @Override
     public boolean checkData() {
-        return new ValidationRenter(this.cedula, this.nombre).validated();
+        return new ValidationRenter(this.cedula, this.nombre).validated(); //Llamada al facade de validación
     }
     
     

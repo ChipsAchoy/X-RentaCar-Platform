@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package xrentcar.sharecarsystem.FactoryMethod;
 
 /**
  *
- * @author A
+ * Interfaz que define los métodos que cada usuario debe de tener
  */
 public interface User {
     void create(int id, String name);

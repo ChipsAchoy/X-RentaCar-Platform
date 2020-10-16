@@ -9,25 +9,27 @@ import xrentcar.sharecarsystem.FactoryMethod.User;
 
 /**
  *
- * @author A
+ * @author Anthony Chaves, Christopher Castro y Jan Marschatz
+ * Simulación de una aplicación para el sistema ShareCarSystem
+ * Este Main selecciona si la cuenta del usuario es de propietario de un vehículo o cliente que rentará uno
  */
 public class Main {
-    //To create a Renter account
+    //Para crear una cuenta de cliente
     /*
     static String selectedFunction = "Renter";
     static String name = "Tobias";
     static int id = 110250478;
     */
     
-    //To create a Lender account
-    static String selectedFunction = "Lender";
+    //Para crear una cuenta de propietario/vehiculo
+    static String selectedFunction = "Lender"; //selectedFunction simula la selección que se realizaría en la interfaz gráfica, por ejemplo
     static String name = "Raul";
     static int id = 124555;
     
     static Account currentAcc;
     static User usr;
     
-    static void initialize(){
+    static void initialize(){ //inicializa el programa segun la necesidad del usuario
         if (selectedFunction.equals("Renter")){
             currentAcc = new Renter();
         }

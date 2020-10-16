@@ -3,7 +3,7 @@ package xrentcar.sharecarsystem.FactoryMethod;
 
 /**
  *
- * @author A
+ * Interfaz de la fábrica de cuentas de la aplicación
  */
 public interface Account {
     User defineUser();   

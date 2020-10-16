@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package xrentcar.sharecarsystem.Singleton;
 
 /**
  *
- * @author A
+ * AccessPoint implementa el patrón de Singleton para simular una conexión a internet para obtener datos de varias páginas web
  */
 public class AccessPoint {
     private static AccessPoint instance = null;
-    
+    //Simula el acceso a las bases de datos de las distintas plataformas
     private String[] fbusers = {"Tobias", "Raul", "Luis", "Juana"};
     private int[] placas = {124555, 888999, 774666, 254178};
     private int[] cedulas = {110250347, 120100345, 457850214, 721023645};
